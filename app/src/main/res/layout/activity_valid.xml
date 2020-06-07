@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValidActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="11dp"
+        android:text="Heure de livraison"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/timerecap"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/adresserecap" />
+
+    <TextView
+        android:id="@+id/recap"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Récapitulatif de votre commande"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/surnamerecap"
+        android:layout_width="161dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="38dp"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/namerecap"
+        app:layout_constraintTop_toBottomOf="@+id/recap" />
+
+    <ImageView
+        android:id="@+id/returnHome"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="149dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mailbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/returnhome" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Commande confirmée"
+        android:text="Commande confirmée"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizzarecap"
+        tools:text="Commande confirmée" />
+
+    <TextView
+        android:id="@+id/namerecap"
+        android:layout_width="156dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/surnamerecap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recap" />
+
+    <TextView
+        android:id="@+id/adresserecap"
+        android:layout_width="346dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="33dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonerecap" />
+
+    <TextView
+        android:id="@+id/phonerecap"
+        android:layout_width="352dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namerecap" />
+
+    <TextView
+        android:id="@+id/pizzarecap"
+        android:layout_width="124dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/timerecap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adresserecap" />
+
+    <TextView
+        android:id="@+id/timerecap"
+        android:layout_width="137dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="86dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pizzarecap"
+        app:layout_constraintTop_toBottomOf="@+id/adresserecap" />
+
+    <ImageView
+        android:id="@+id/mailbtn"
+        android:layout_width="94dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="74dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/returnHome"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="23dp"
+        android:text="Nom"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/namerecap"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/recap"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="23dp"
+        android:text="Prénom"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/surnamerecap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recap"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginBottom="14dp"
+        android:text="Téléphone"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phonerecap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namerecap"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="333dp"
+        android:text="Adresse"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonerecap" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="143dp"
+        android:text="Pizza"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adresserecap" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
