@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/button_order"
-        android:layout_width="109dp"
-        android:layout_height="51dp"
+        android:layout_width="142dp"
+        android:layout_height="52dp"
         android:layout_marginTop="44dp"
         android:background="@color/colorAccent"
         android:onClick="commander"
@@ -133,8 +133,8 @@
 
     <Button
         android:id="@+id/pickTimeBtn"
-        android:layout_width="157dp"
-        android:layout_height="41dp"
+        android:layout_width="159dp"
+        android:layout_height="60dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="123dp"
