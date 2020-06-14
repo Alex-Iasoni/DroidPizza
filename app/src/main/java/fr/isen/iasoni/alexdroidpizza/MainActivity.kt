@@ -1,6 +1,7 @@
 package fr.isen.iasoni.alexdroidpizza
 
 import android.app.TimePickerDialog
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -25,7 +26,12 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val sharedpreferences = getSharedPreferences(
+            "Commande",
+            Context.MODE_PRIVATE
+        )
+        newName.setText(sharedpreferences.getString("Name", ""));
+        newSurName.setText(sharedpreferences.getString("Surname", ""));
         lateinit var optionPizza : Spinner
         optionPizza = findViewById(R.id.pizzaSpinner) as Spinner
         val mPickTimeBtn = findViewById<Button>(R.id.pickTimeBtn)
